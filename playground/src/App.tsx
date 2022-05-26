@@ -1,20 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-interface AppProps {
-  paragraphText: string,
-  headerText: string,
 
-}
+import { Cat } from "./interfaces";
+import {useState} from "react";
 
-function App({paragraphText,headerText}: AppProps) {
+export default function App() {
+  
+  const [animal, jumpAnimal] = useState< Cat | null > (null);
+
+  const fetchCat = () =>
+    jumpAnimal({
+      name: "Ciguli",
+      age: 12,
+      sex: "male",
+      toys: {
+        color: "blue",
+        material: "wood"
+      }
+    });
+
   return (
     <>
-        <p>{paragraphText}</p>
-        <h1>{headerText}</h1>
+      <div className="catty">
+        <button className="btn" onClick={fetchCat}>Call Cat</button>
+      
+      {animal && <p>Welcome {animal.name}</p>} 
+
+      </div>
     </>
   );
 }
 
-export default App;

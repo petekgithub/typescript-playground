@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.catty {
+  text-decoration: dotted;
+  border: 3px dashed red;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  color: blueviolet;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
