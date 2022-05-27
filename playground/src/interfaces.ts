@@ -1,5 +1,4 @@
 
-
 export interface Toys {
     color: string;
     material: string;

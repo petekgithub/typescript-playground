@@ -5,10 +5,10 @@ import {useState} from "react";
 
 export default function App() {
   
-  const [animal, jumpAnimal] = useState< Cat | null > (null);
+  const [animal, setAnimal] = useState< Cat | null > (null);
 
   const fetchCat = () =>
-    jumpAnimal({
+  setAnimal({
       name: "Ciguli",
       age: 12,
       sex: "male",
