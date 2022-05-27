@@ -5,10 +5,10 @@ import {useState} from "react";
 
 export default function App() {
   
-  const [animal, jumpAnimal] = useState< Cat | null > (null);
+  const [cat, setCat] = useState<Cat | null>(null);
 
   const fetchCat = () =>
-    jumpAnimal({
+    setCat({
       name: "Ciguli",
       age: 12,
       sex: "male",
@@ -23,7 +23,7 @@ export default function App() {
       <div className="catty">
         <button className="btn" onClick={fetchCat}>Call Cat</button>
       
-      {animal && <p>Welcome {animal.name}</p>} 
+      {cat && <p>Welcome {cat.name}</p>} 
 
       </div>
     </>
