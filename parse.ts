@@ -1,13 +1,7 @@
-//Codewars - 7kata - wovel-count
+//Codewars - 8kata - parse-nice-int-from-char-problem
 // Converted js to ts 
 
-function getCount(str:string):number {
-    let vowelsCount = 0;
-    const vowels = ['a','e','i','o','u'];
-    for(let char of str) {
-        if(vowels.includes(char)) {
-            vowelsCount++;
-        }
-    }
-    return vowelsCount;
+//The parseInt method parses a value as a string and returns the first integer.
+function getAge(n:string):number {
+    return parseInt(n,10)
 }
