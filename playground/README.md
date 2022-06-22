@@ -1,2 +1,2 @@
-# Converting Codewars kata Javascript solution to Typescirpt.
+## Converting Codewars kata Javascript solution to Typescript.
 
